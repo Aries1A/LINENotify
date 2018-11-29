@@ -3,7 +3,7 @@ import requests
 import random
 import os
 
-ACCESS_TOKEN = "SpZO5Ll4waJmi0qYGdRrDWMs9fYLZeMULUqyldOWcJG"
+ACCESS_TOKEN = "LTpSifeLNYHBmIhdDjsbtkt29v9dpqtVYpaF4vxK1E8"
 imgFileNum = sum(len(files) for _, _, files in os.walk('img'))
 print(str(imgFileNum))
 
