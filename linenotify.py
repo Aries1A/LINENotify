@@ -19,14 +19,11 @@ messageList = ["おはよう! 今日も1日頑張ろうね☀️",
 
 url = "https://notify-api.line.me/api/notify"
 headers = {'Authorization': 'Bearer ' + ACCESS_TOKEN}  # 発行したトークン
-# message = random.choice(messageList)
-message = "素敵な一年にしてね"
+message = random.choice(messageList)
 
 payload = {"message":  message}
 # バイナリで画像ファイルを開きます。対応している形式はPNG/JPEGです。
-# files = {"imageFile": open("img/" + str(random.randrange(imgFileNum)+1) + ".jpg", "rb")}
-files = {"imageFile": open("img/" + str(7) + ".jpg", "rb")}
-
+files = {"imageFile": open("img/" + str(random.randrange(imgFileNum)+1) + ".jpg", "rb")}
 
 # if random.randrange(5) == 1 :
 #     r = requests.post(url, headers=headers, params=payload, files=files)
