@@ -25,7 +25,7 @@ payload = {"message":  message}
 # バイナリで画像ファイルを開きます。対応している形式はPNG/JPEGです。
 files = {"imageFile": open("img/" + str(random.randrange(imgFileNum)+1) + ".jpg", "rb")}
 
-if random.randrange(5) == 1 :
+if random.randrange(5) == 1 :
     r = requests.post(url, headers=headers, params=payload, files=files)
 
 r = requests.post(url, headers=headers, params=payload, files=files)
